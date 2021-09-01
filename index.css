@@ -1,0 +1,557 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+p{
+    font-weight: bold!important;
+    line-height: 1.6;
+    font-size: 10px !important;
+    color:#606060;
+}
+
+
+#logo{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .2s ease;
+    border: 2px solid #fff;
+}
+
+#logo:hover{
+    transform: scale(1.1);
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(250,177,160,0.2),rgba(250,177,160,0.3)), url('cover2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(100% 0%,100% 77%,50% 100%,0% 75%,0 0);
+    position: relative;
+}
+
+.header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: .2;
+    z-index: -1;
+    background: linear-gradient(to right,#1e5799 0%,#3ccdbb 0%,#16c9f6 100%);
+
+}
+
+.navbar::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: .2;
+    z-index: -1;
+    background: linear-gradient(to right,#1e5799 0%,#3ccdbb 0%,#16c9f6 100%);
+}
+
+.nav-item a{
+    color: #fff !important;
+    font-weight: bold;
+}
+
+
+.header-section{
+    width: 100%;
+    height: inherit;
+    color: #50d1c0;
+    text-align: center;
+    position: relative;
+}
+
+.center-div{
+    width: 100%;
+    height: auto;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+}
+
+.center-div h1{
+    color: #fff;
+    font-family: 'Big Shoulders Stencil Text', cursive;
+}
+
+.center-div p{
+    color: #fff !important;
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    font-size: medium !;
+}
+
+.header-buttons{
+    margin-top: 50px;
+}
+
+.header-buttons a{
+    border: 1px solid #fff;
+    border-radius: 100px;
+    margin: 0px 5px;
+    padding: 10px 25px;
+    color: #fff;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+
+}
+
+.header-buttons a:hover{
+    color: #50d1c0;
+    background: #fff;
+    text-decoration: none;
+    box-shadow: 0px 0px 20px 0px rgba(126, 50, 50, 0.3);
+    font-weight: bold;
+}
+
+
+.center-div p{
+    font-size: larger !important;
+    padding: 10px 0 20px 0;
+    color: #50d1c0;
+    font-weight: 600 !important;
+}
+
+
+/*********Extra header div css start*****/
+    .header-extradiv{
+        width: 100%;
+        height: auto;
+        margin: 100px 0px;
+        text-align: center;
+    }
+
+    .extra-div{
+        background: #fff;
+        border: medium none;
+        padding: 50px !important;
+        transition: 0.3s;
+        border-radius: 5px;
+    }
+
+    .extra-div p{
+        font-weight: bold!important;
+    line-height: 1.6;
+    font-size: 10px !important;
+    color:#606060;
+    }
+
+    .extra-div h3, .servicediv h4{
+        font-size: 0.9rem;
+        font-weight: bold;
+        margin: 20px 0px 15px 0px;
+    }
+
+    .extra-div:hover{
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+        transform: translateY(-20px);
+    }
+/*********Extra header div css end*****/
+
+/*********Service div css start*****/
+    .serviceoffer{
+        background: #f7f7f9;
+        padding: 50px 0px;
+        margin-bottom: 50px;
+    }
+
+    .headings{
+        margin-bottom: 50px;
+    }
+     
+    .headings h1{
+        font-size: 1.1rem;
+    }
+
+    .names{
+        font-size: 0.9rem !important;
+        color: #2e2e2e;
+        text-transform: capitalize;
+    }
+
+    .headings p{
+        font-size: 10px !important;
+        color:#606060;
+    }
+    
+
+
+/*********Service div css end*****/
+
+/*******Project-work css start*****/
+
+.numb{
+    font-weight: 550;
+}
+
+
+/*********Project-work css end*****/
+
+/*********Pricing css start*****/
+
+   
+    .card:hover{
+        transform: translateY(-20px);
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+
+    }
+    .pricing{
+        width: 100%;
+        height: 100vh;
+        padding:40px !important;
+        position: relative;
+    }
+
+    .pricing::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        background: linear-gradient(160deg,#16c9f6 55%,#fff 0);
+    }
+
+    .card-body li{
+        font-weight: bold!important;
+        font-size: 10px !important;
+        color:#606060;
+        line-height: 30px !important;
+        letter-spacing: 1px;
+    }
+
+    .card-footer{
+        padding: 20px 0px !important;
+        background: #fff !important;
+    }
+
+    .pricing-btn{
+        border: 1px solid #50d1c0;
+        border-radius: 100px;
+        margin: 5px;
+        padding: 10px 25px;
+        color: #50d1c0;
+        outline: none;
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: 1.4;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .card:hover .pricing-btn{
+        color: #fff;
+        background: #50d1c0;
+        text-decoration: none;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+    }
+
+    .money{
+        font-size: 25px;
+        line-height: 1;
+        color: #606060;
+        font-weight: 600 !important;
+    }
+
+    .card{
+        border-radius: 20px !important;
+        transition: .4s ease;
+    }
+
+    .card-header{
+        font-size: 1.6rem;
+        font-weight: bold;
+        background: #fff !important;
+        padding: 10px !important;
+    }
+
+    .card-body{
+        margin:20px 0px !important;
+    }
+
+    .card:hover .card-header, .card:hover .money{
+        color: #50d1c0;
+    }
+
+    .card-hover{
+        border-radius: 20px;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+       
+    }
+
+    .card-hover-main{
+        border-radius: 20px;
+        transform: translateY(-20px);
+        box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.3);
+    }
+
+/*********Pricing css end*****/
+
+/*******Customar feedback css start*****/
+.happyclients{
+    width: 100%;
+    height: 100vh;
+    padding: 80px 0;
+}
+
+.box{
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 5px 10px 0 rgba(0,0,0,0.3);
+    border-radius: 2px;
+    transition: .3s ease;
+}
+
+.box:hover{
+    background: #16c9f6;
+}
+
+.box:hover p{
+    color: white;
+}
+
+.carousel-indicators{
+    position: absolute;
+    right: 0;
+    bottom: -60px !important;
+}
+
+.carousel-indicators li{
+    background: #16c9f6 !important;
+}
+
+.box a{
+    position: relative;
+}
+
+.box a img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+.box a::after{
+    content: "\f10d";
+    font-family: FontAwesome;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(to right,#1e5799 0%,#3ccdbb 0%,#16c9f6 100%);
+    color: white;
+    position: absolute;
+    top: 120%;
+    left: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.box h1{
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.box h6{
+    font-size: 10px;
+    font-weight: 600;
+    color: #666666;
+    margin-bottom: 10px;
+}
+/*******Contact us css start*****/
+.contactus{
+    width: 100%;
+    height: 100vh;
+    padding: 80px 0;
+    position: relative;
+}
+
+.contactus::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(330deg,#16c9f6 55%,#fff 0%);
+    z-index: -1;
+
+}
+
+.form-btn button{
+    border: 1px solid #50d1c0;
+    border-radius: 100px;
+    margin: 5px;
+    padding: 10px 25px;
+    color: #50d1c0;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.4;
+    text-align: center;
+    text-transform: uppercase;
+    background: transparent;
+}
+
+form:hover .form-btn button{
+    background: #fff;
+    color: #50d1c0;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+::placeholder{
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+textarea{
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 0.75rem !important;
+    color: #606060;
+}
+
+.form-group input{
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+/*******Contact us css end*****/
+
+/*******Newsletter css start*****/
+.newsletter{
+    width: 100%;
+    height: auto;
+    margin: 80px auto;
+}
+
+.newsletter-input{
+    border-radius: 100px 0 0 100px !important;
+    min-width: 150px !important;
+    min-height: 45px !important;
+}
+
+.input-group-text{
+    font-weight: 600 !important;
+    color: #fff !important;
+    background: #5bc0de !important;
+    border-radius: 0px 100px 100px 0px !important;
+}
+/*******Newsletter css end*****/
+
+/*******Footer css start*****/
+.footer{
+    width: 100%;
+    height: auto;
+    padding: 70px 0px 20px 0px;
+    background: #16C9F6;
+    position: relative;
+    color: #fff;
+}
+
+.footer p{
+    color: #fff;
+    
+}
+
+
+.footer h1{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.footer li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold!important;
+    line-height: 1.6;
+    font-size: 10px !important;
+
+}
+
+.footer-input{
+    width: 20px !important;
+    border-radius: 100px 0 0 100px !important;
+    min-height: 45px !important;
+}
+
+#topUpBtn{
+    position: fixed;
+    bottom:20px;
+    right: 40px;
+    z-index: 99;
+    border: none;
+    color: #fff;
+    background: #00abff;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+#topUpBtn:hover{
+    background: #606060;
+}
+
+
+/*******Footer css end*****/
+
+
+
+/********Media Query*********/
+
+@media(max-width:768px){
+    .liitem{
+        text-align: center;
+    }
+
+    .pricing, .happyclients{
+        height: auto;
+        margin-top: 50px;
+    }
+    .card-hover-main{
+        transform: translateY(0px);
+        margin: 30px 0px;
+    }
+}
